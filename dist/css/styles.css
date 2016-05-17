@@ -291,6 +291,8 @@ footer {
     .utility-links li a {
       display: block;
       line-height: 21px; }
+      .utility-links li a:hover, .utility-links li a:focus {
+        opacity: 0.7; }
 
 .skills {
   display: inline-block;
