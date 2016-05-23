@@ -16,10 +16,10 @@ body,
 button,
 input,
 select {
-	padding: 0;
-	margin: 0;
 	background: $site-bg;
 	font-family: $body-font;
+	margin: 0;
+	padding: 0;
 }
 
 /* typography
@@ -32,10 +32,10 @@ h3,
 h4,
 h5,
 h6 {
-	clear: both;
-	font-family: $heading-font;
-	font-weight: 700;
-	margin-bottom: 1.5rem;
+  clear: both;
+  font-family: $heading-font;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
 }
 
 h1 {
@@ -59,10 +59,10 @@ h4 {
 }
 
 hr {
-	background-color: #ccc;
-	border: 0;
-	height: 1px;
-	margin-bottom: 1.5em;
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
 }
 
 /* Text elements */
@@ -86,56 +86,56 @@ ul ul,
 ol ol,
 ul ol,
 ol ul {
-	margin-bottom: 0;
-	margin-left: 1.5em;
+  margin-bottom: 0;
+  margin-left: 1.5em;
 }
 
 dt {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 dd {
-	margin: 0 1.5em 1.5em;
+  margin: 0 1.5em 1.5em;
 }
 
 b,
 strong {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 dfn,
 cite,
 em,
 i {
-	font-style: italic;
+  font-style: italic;
 }
 
 blockquote {
-	margin: 0 1.5em;
+  margin: 0 1.5em;
 }
 
 address {
-	margin: 0 0 1.5em;
+  margin: 0 0 1.5em;
 }
 
 pre {
-	background: #eee;
-	font-family: "Courier 10 Pitch", Courier, monospace;
-	font-size: 15px;
-	font-size: 1.5rem;
-	line-height: 1.6;
-	margin-bottom: 1.6em;
-	padding: 1.6em;
-	overflow: auto;
-	max-width: 100%;
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  padding: 1.6em;
+  overflow: auto;
+  max-width: 100%;
 }
 
 /* Links */
 a {
-	color: $link-color;
-	text-decoration: none;
+  color: $link-color;
+  text-decoration: none;
 
-	//background transition
+  //background transition
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0);
@@ -157,54 +157,54 @@ a:active {
 
 /* Alignment */
 .alignleft {
-	display: inline;
-	float: left;
-	margin-right: 1.5em;
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
 }
 
 .alignright {
-	display: inline;
-	float: right;
-	margin-left: 1.5em;
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
 }
 
 .aligncenter {
-	clear: both;
-	display: block;
-	margin: 0 auto;
+  clear: both;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Misc & mixens
 -------------------------------------------------------------- */
 
 .hide-text {
-	overflow: hidden;
-	text-indent: 100%;
-	white-space: nowrap;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /* clear floats */
 .clearfix:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0;
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
 }
 
 .clearfix {
-	display: inline-block;
+  display: inline-block;
 }
 
 html[xmlns] .clearfix {
-	display: block;
+  display: block;
 }
 
 * html .clearfix {
-	height: 1%;
+  height: 1%;
 }
