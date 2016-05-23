@@ -1,2 +1,2 @@
 # portfolio
-My Portfolio Site
+My Portfolio Site - Put together with SASS using Gulp to compile.
