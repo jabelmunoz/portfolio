@@ -11,16 +11,16 @@ header {
       padding: 0;
       text-transform: uppercase;
 
-			a {
+      a {
         text-decoration: none;
-			} //a
+      } //a
 
       span {
         font-weight: 200;
         text-transform: lowercase;
-			}
-		}// h1
-	}// #brand
+      }
+    }// h1
+  }// #brand
 
   nav {
     float: left;
@@ -35,7 +35,7 @@ header {
 
         a {
           font-size: 14px;
-	      }
+        }
       }
     } // ul
   }// nav
@@ -53,9 +53,9 @@ header {
 }
 
 footer {
-	font-size: 12px;
-	padding-bottom: 40px;
-	text-align: center;
+  font-size: 12px;
+  padding-bottom: 40px;
+  text-align: center;
 }
 
 .brand-left {
