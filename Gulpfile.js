@@ -12,14 +12,14 @@ gulp.task("default", ["sass"]);
 // Live reload anytime a file changes
 gulp.task("watch", ["browserSync", "sass"], function() {
 	gulp.watch("src/scss/**/*.scss", ["sass"]);
-	gulp.watch("dist/*.html").on("change", browserSync.reload);
+	gulp.watch("*.html").on("change", browserSync.reload);
 });
 
 // Spin up a server
 gulp.task("browserSync", function() {
 	browserSync({
 		server: {
-			baseDir: "dist"
+			baseDir: ""
 		}
 	})
 });
@@ -27,12 +27,20 @@ gulp.task("browserSync", function() {
 // Compile SASS files
 gulp.task("sass", function() {
 	gulp.src("src/scss/**/*.scss")
-			.pipe(sass({
-				includePaths: bourbon,
-				includePaths: neat
-			}))
-			.pipe(gulp.dest("dist/css"))
-			.pipe(browserSync.reload({
-				stream: true
-			}))
+		.pipe(sass({
+			includePaths: bourbon,
+			includePaths: neat
+		}))
+		.pipe(gulp.dest("src/css"))
+		.pipe(browserSync.reload({
+			stream: true
+		}))
+});
+
+var csslint = require('gulp-csslint');
+
+gulp.task('css', function() {
+  gulp.src('src/css/*.css')
+    .pipe(csslint())
+    .pipe(csslint.reporter());
 });
