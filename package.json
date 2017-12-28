@@ -1,0 +1,31 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Abel's portfolio",
+  "main": "Gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "browser-sync": "^2.12.5",
+    "gulp-sass": "^2.3.1",
+    "gulp-csslint": "^0.3.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.21.0",
+    "gulp": "^3.9.1",
+    "gulp-csslint": "^0.3.1",
+    "gulp-sass": "^2.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jabelmunoz/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jabelmunoz/portfolio/issues"
+  },
+  "homepage": "https://github.com/jabelmunoz/portfolio#readme"
+}

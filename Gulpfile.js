@@ -2,12 +2,11 @@
 
 var gulp = require("gulp"),
 		browserSync = require("browser-sync"),
-		sass = require("gulp-sass"),
-		bourbon = require("node-bourbon").includePaths,
-		neat = require("node-neat").includePaths;
+		sass = require("gulp-sass");
 
 // Compiles all gulp tasks
-gulp.task("default", ["sass"]);
+gulp.task('default', ['sass']);
+//gulp.task('default', ['build']);
 
 // Live reload anytime a file changes
 gulp.task("watch", ["browserSync", "sass"], function() {
@@ -24,23 +23,20 @@ gulp.task("browserSync", function() {
 	})
 });
 
-// Compile SASS files
-gulp.task("sass", function() {
-	gulp.src("src/scss/**/*.scss")
-		.pipe(sass({
-			includePaths: bourbon,
-			includePaths: neat
-		}))
-		.pipe(gulp.dest("src/css"))
-		.pipe(browserSync.reload({
+gulp.task('sass', function () {
+  return gulp.src('src/scss/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('src/css'))
+    .pipe(browserSync.reload({
 			stream: true
-		}))
+		}));
 });
 
-var csslint = require('gulp-csslint');
-
-gulp.task('css', function() {
-  gulp.src('src/css/*.css')
-    .pipe(csslint())
-    .pipe(csslint.reporter());
-});
+// Compile SASS files
+//gulp.task("sass", function() {
+	//gulp.src("src/scss/**/*.scss")
+		//.pipe(gulp.dest("src/css"))
+		//.pipe(browserSync.reload({
+			//stream: true
+		//}))
+//});
