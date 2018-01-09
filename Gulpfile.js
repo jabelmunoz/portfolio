@@ -5,7 +5,7 @@ var gulp = require("gulp"),
 		sass = require("gulp-sass");
 
 // Compiles all gulp tasks
-gulp.task('default', ['sass']);
+gulp.task('default', ['watch']);
 //gulp.task('default', ['build']);
 
 // Live reload anytime a file changes
